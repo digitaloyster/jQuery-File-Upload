@@ -123,11 +123,11 @@
             // matched against the file type:
             loadImageFileTypes: /^image\/(gif|jpeg|png|svg\+xml)$/,
             // The maximum file size of images to load:
-            loadImageMaxFileSize: 10000000, // 10MB
+            //loadImageMaxFileSize: 10000000, // 10MB
             // The maximum width of resized images:
-            imageMaxWidth: 1920,
+            imageMaxWidth: 600,
             // The maximum height of resized images:
-            imageMaxHeight: 1080,
+            imageMaxHeight: 400,
             // Defines the image orientation (1-8) or takes the orientation
             // value from Exif data if set to true:
             imageOrientation: false,
