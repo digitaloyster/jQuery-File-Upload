@@ -123,7 +123,7 @@
             // matched against the file type:
             loadImageFileTypes: /^image\/(gif|jpeg|png|svg\+xml)$/,
             // The maximum file size of images to load:
-            loadImageMaxFileSize: 261105307, // 10MB
+            //loadImageMaxFileSize: 20000000, // 10MB
             // The maximum width of resized images:
             imageMaxWidth: 600,
             // The maximum height of resized images:
@@ -134,7 +134,7 @@
             // Define if resized images should be cropped or only scaled:
             imageCrop: false,
             // Disable the resize image functionality by default:
-            disableImageResize: true,
+            disableImageResize: false,
             // The maximum width of the preview images:
             previewMaxWidth: 80,
             // The maximum height of the preview images:
@@ -143,11 +143,11 @@
             // value from Exif data if set to true:
             previewOrientation: true,
             // Create the preview using the Exif data thumbnail:
-            previewThumbnail: true,
+            previewThumbnail: false,
             // Define if preview images should be cropped or only scaled:
             previewCrop: false,
             // Define if preview images should be resized as canvas elements:
-            previewCanvas: true
+            previewCanvas: false
         },
 
         processActions: {
