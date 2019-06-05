@@ -119,22 +119,22 @@
     $.widget('blueimp.fileupload', $.blueimp.fileupload, {
 
         options: {
-            // The regular expression for the types of images to load:
+           // The regular expression for the types of images to load:
             // matched against the file type:
             loadImageFileTypes: /^image\/(gif|jpeg|png|svg\+xml)$/,
             // The maximum file size of images to load:
-            //loadImageMaxFileSize: 20000000, // 10MB
+            loadImageMaxFileSize: 10000000, // 10MB
             // The maximum width of resized images:
-            imageMaxWidth: 600,
+            imageMaxWidth: 1920,
             // The maximum height of resized images:
-            imageMaxHeight: 400,
+            imageMaxHeight: 1080,
             // Defines the image orientation (1-8) or takes the orientation
             // value from Exif data if set to true:
             imageOrientation: false,
             // Define if resized images should be cropped or only scaled:
             imageCrop: false,
             // Disable the resize image functionality by default:
-            disableImageResize: false,
+            disableImageResize: true,
             // The maximum width of the preview images:
             previewMaxWidth: 80,
             // The maximum height of the preview images:
@@ -143,11 +143,11 @@
             // value from Exif data if set to true:
             previewOrientation: true,
             // Create the preview using the Exif data thumbnail:
-            previewThumbnail: false,
+            previewThumbnail: true,
             // Define if preview images should be cropped or only scaled:
             previewCrop: false,
             // Define if preview images should be resized as canvas elements:
-            previewCanvas: false
+            previewCanvas: true
         },
 
         processActions: {
